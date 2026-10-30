@@ -1,4 +1,4 @@
-const API="http://localhost:5000/api";
+const API="https://dinehub-backend-mskg.onrender.com/api";
 function getCart(){return JSON.parse(localStorage.getItem("dinehub_cart")||"[]")}
 function setCart(c){localStorage.setItem("dinehub_cart",JSON.stringify(c));updateCartCount()}
 function updateCartCount(){const el=document.getElementById("cartCount");if(el)el.textContent=getCart().reduce((s,x)=>s+x.qty,0)}

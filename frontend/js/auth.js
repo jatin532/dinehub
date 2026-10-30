@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api";
+const API="https://dinehub-backend-mskg.onrender.com/api";
 
 async function post(path, body) {
     const response = await fetch(API + path, {
